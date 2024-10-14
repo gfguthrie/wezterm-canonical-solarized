@@ -1,7 +1,7 @@
 # Canonical Solarized Color Scheme for Wezterm
 [Wezterm](https://wezfurlong.org/wezterm/) is a terminal emulator that supports true color via CSS Color 4. The [Solarized](https://ethanschoonover.com/solarized/) color palette is defined with L\*a\*b values, and so we have the opportunity to define a color scheme in Wezterm using the canonical color space of Solarized.
 
-This repo is not strictly a color scheme for Wezterm, but rather a Lua module that defines the Solarized schemes to be applied to your Wezterm config. This is mainly because of the need to specify `bold_brightens_ansi_colors = false` as part of the scheme – the way that Solarized defines its terminal colors is not compatible with this option. Additionally, we can define the light theme, the dark theme, and the terminal colors just once and refer to them as necessary.
+This repo is not strictly a color scheme for Wezterm, but rather a Lua module that defines the Solarized schemes to be applied to your Wezterm config. This is mainly because of the need to specify `bold_brightens_ansi_colors = false` as part of the scheme – the way that Solarized defines its terminal colors is not compatible with this option. If you apply this module but do not use one of the schemes, you may want to reset this value in your config.
 
 Also included is an optional module that will automatically switch between the light & dark themes depending upon the system gui appearance.
 
